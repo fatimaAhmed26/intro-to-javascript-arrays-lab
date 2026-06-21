@@ -95,7 +95,7 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-soyIdx =foods.indexOf('tofu')
+let soyIdx =foods.indexOf('tofu')
 
 console.log('Exercise 8 result:', soyIdx);
 /*
@@ -112,7 +112,42 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 
-const allFoods = console.log(foods.join("->"))
+let allFoods = foods.join("->")
 
 console.log('Exercise 9 result:', allFoods);
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
+let hasSoup = foods.includes('soup')
+
+
+console.log('Exercise 10 result:', hasSoup);
+/*
+Exercise 11: Odd numbers from an array
+
+1) Choose a method to iterate through the `nums` array.
+
+2) Push each odd number to a new array named `odds`.
+
+Hint: Initialize the `odds` variable to an empty array before the iteration.
+
+Complete Exercise 11 in the space below:
+*/
+
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds = []; 
+
+nums.forEach(function(num) {
+    if (num % 2 !== 0) { 
+        odds.push(num); 
+    }
+})
+console.log('Exercise 11 result:', odds);
 
